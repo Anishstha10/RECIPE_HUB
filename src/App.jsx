@@ -6,6 +6,7 @@ import Menu from './pages/Menu'
 import About from './Pages/About'
 import Contact from './Pages/Contact'
 import ProductDescription from './pages/ProductDescription'
+import RecipeCreation from './pages/RecipeCreation'
 
 
 
@@ -21,6 +22,7 @@ function App() {
       <Route path ='/about' element={<About/>}/>
       <Route path ='/contact' element={<Contact/>}/>
       <Route path ='/productdescription/:id' element={<ProductDescription/>}/>
+      <Route path='/create-recipe' element={<RecipeCreation/>}/>
       
       
     
