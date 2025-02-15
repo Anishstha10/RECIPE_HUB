@@ -6,7 +6,7 @@ const Navbar = () => {
     <>
 
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6">
           <div className="flex items-center space-x-3 rtl:space-x-reverse">
 
             <Link to='/' className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Recipe Hub</Link>
@@ -42,7 +42,7 @@ const Navbar = () => {
             </ul>
 
             {/* Search component */}
-            <div class="flex px-4 py-3 translate-x-40 rounded-md border-2 border-blue-500 overflow-hidden max-w-md mx-auto font-[sans-serif]">
+            {/* <div class="flex px-4 py-3 translate-x-40 rounded-md border-2 border-blue-500 overflow-hidden max-w-md mx-auto font-[sans-serif]">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192.904 192.904" width="16px"
                 class="fill-gray-600 mr-3 rotate-90">
                 <path
@@ -50,7 +50,7 @@ const Navbar = () => {
                 </path>
               </svg>
               <input type="email" placeholder="Search Something..." class="w-full outline-none bg-transparent text-gray-600 text-sm" />
-            </div>
+            </div> */}
 
 
           </div>
