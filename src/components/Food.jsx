@@ -11,8 +11,7 @@ const FoodItems = [
   { id: 6, name: 'Peri Peri Rolls', price: 250, image: './assets/food_6.png' },
   { id: 7, name: 'Chicken Rolls', price: 300, image: './assets/food_7.png' },
   { id: 8, name: 'Veg Rolls', price: 320, image: './assets/food_8.png' },
-  { id: 9, name: 'Ripple Ice Cream', price: 150, image: './assets/food_9.png' },
-  { id: 10, name: 'Fruit Ice Cream', price: 200, image: './assets/food_10.png' },
+
 ];
 
 const Food = () => {
@@ -36,6 +35,7 @@ const Food = () => {
                 </div>
                 <h2 className="text-lg font-semibold text-gray-900 mt-4">{item.name}</h2>
                 <span className="text-xl font-bold text-red-600 mt-2">Rs {item.price}</span>
+                <p className="text-blue-600 text-xl font-bold mt-1">View Recipe</p>
               </div>
             </Link>
           ))}

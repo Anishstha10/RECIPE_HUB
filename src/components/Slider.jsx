@@ -21,7 +21,7 @@ const Slider = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto relative overflow-hidden">
+    <div className="max-w-[1250px] mx-auto relative overflow-hidden mt-6 rounded-2xl">
       {/* Carousel Wrapper */}
       <div className="relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
         <div
@@ -39,7 +39,7 @@ const Slider = () => {
               <img
                 src={slide.image}
                 alt={slide.alt}
-                className="w-full h-[60vh] object-cover"
+                className="w-full h-[55vh] object-cover"
               />
             </div>
           ))}

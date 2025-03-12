@@ -243,6 +243,9 @@ const Menu = () => {
                   </div>
                   <h2 className="text-lg font-semibold text-gray-900 mt-4">{item.name}</h2>
                   <span className="text-xl font-bold text-red-600 mt-2">Rs {item.price}</span>
+               <p className="text-blue-600 text-xl font-bold mt-1">View Recipe</p>
+
+                  
                   <button 
                     onClick={(event) => {
                       event.preventDefault();
