@@ -1,6 +1,5 @@
 import React from 'react';
-import Navbar from './Navbar'; // Added import for Navbar
-import Footer from './Footer';
+
 import { Link } from 'react-router-dom';
 
 const FoodItems = [
@@ -20,29 +19,29 @@ const Food = () => {
   return (
     <>
       
-      <div className="text-center font-bold text-2xl mt-10">Explore our menu</div>
-      <div className="flex mt-8 flex-wrap justify-center">
-        {FoodItems.map((item) => (
-          <Link
-            to={`/productdescription/${item.id}`}
-            key={item.id}
-            className="flex m-6 justify-center items-center"
-          >
-            <div className="bg-white rounded-lg shadow-md overflow-hidden w-56 cursor-pointer">
-              <img src={item.image} alt={item.name} />
-              <div className="p-4">
-                <h2 className="text-lg font-bold">{item.name}</h2>
-                <div className="flex items-center justify-between mt-3">
-                  <span className="text-lg font-semibold text-red-500">
-                    Rs {item.price}
-                  </span>
+      <div className="max-w-screen-xl mx-auto px-4">
+        <div className="text-center font-extrabold text-4xl mt-6 text-orange-600 drop-shadow-lg">
+          Explore our menu
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 p-10 justify-center">
+          {FoodItems.map((item) => (
+            <Link
+              to={`/productdescription/${item.id}`}
+              key={item.id}
+              className="group block transform transition-all hover:scale-105"
+            >
+              <div className="bg-gradient-to-br from-yellow-100 to-orange-300 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all border border-orange-400 p-4 flex flex-col items-center text-center">
+                <div className="w-32 h-32 bg-white rounded-full overflow-hidden shadow-md">
+                  <img src={item.image} alt={item.name} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
                 </div>
+                <h2 className="text-lg font-semibold text-gray-900 mt-4">{item.name}</h2>
+                <span className="text-xl font-bold text-red-600 mt-2">Rs {item.price}</span>
               </div>
-            </div>
-          </Link>
-        ))}
+            </Link>
+          ))}
+        </div>
       </div>
-      
+     
     </>
   );
 };
