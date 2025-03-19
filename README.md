@@ -9,3 +9,4 @@ Currently, two official plugins are available:
 "# Recipe_Hub-Intern-" 
 "# Recipe_Hub" 
 "# RECIPE_HUB" 
+"# Recipe-Hub" 
